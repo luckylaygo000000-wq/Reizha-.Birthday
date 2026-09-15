@@ -438,9 +438,19 @@ I Love you when we laugh and I Love you when we disagree , I Love you when life 
 
 <footer>made with care, one stop at a time</footer>
   <DIV>
-    <audio controls autoplay loop muted>
+    <audio id="bg-music" loop>
         <source src="https://github.com/luckylaygo000000-wq/Reizha-.Birthday/blob/main/riskitall.mp3?raw=true" type="audio/mpeg">
-    </audio></DIV>
+    </audio>
+
+    <script>
+        // Plays the music as soon as the user interacts with the page
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('bg-music');
+            audio.play().catch(function(error) {
+                console.log("Playback prevented by browser: ", error);
+            });
+        }, { once: true }); // { once: true } makes sure this only runs on the first click
+    </script></DIV>
 
 <script>
 // ---------- countdown ----------
