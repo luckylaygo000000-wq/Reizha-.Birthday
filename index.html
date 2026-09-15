@@ -186,6 +186,14 @@
   }
   .frame-cap{color:var(--bg-deep); font-family:'Fraunces',serif; font-style:italic; font-size:0.85rem; text-align:center; margin-top:0.5em;}
 
+
+
+ /* ---------- video ---------- */
+ .video-grid{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+    gap:10px; max-width:4000px; margin:0 auto;
+  }
+  
   /* ---------- quiz ---------- */
   .quiz-box{
     max-width:560px; margin:0 auto; background:var(--bg-panel);
@@ -359,9 +367,9 @@
   </div>
   </section>
 <section>
-    <div class="gallery-grid" >
+    <div class="video-grid" >
   <div class="frame" >
-   <video autoplay loop muted playsinline width="350" height="200" poster="thumbnail.jpg">
+   <video autoplay loop muted playsinline width="380" height="200" poster="thumbnail.jpg">
   <source src="https://github.com/luckylaygo000000-wq/Reizha-.Birthday/blob/main/itsstarthere.mp4?raw=true" type="video/mp4">
  
    </div>
